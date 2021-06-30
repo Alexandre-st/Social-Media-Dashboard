@@ -11,17 +11,36 @@ h5 {
   font-weight: $bold;
 }
 
-h2 {
+h2,
+h3,
+h5 {
   color: $title-gray;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
   font-size: 1.5rem;
 }
 
 h3 {
-  color: $title-gray;
   font-size: 0.875rem;
 }
 
+h4 {
+  color: #000;
+  font-size: 3.5rem;
+  line-height: 3rem;
+  margin: 0;
+}
+
 h5 {
-  color: $title-gray;
   font-size: 0.75rem;
+}
+
+.container {
+  padding: 0 25px;
+  margin: 0 auto;
 }

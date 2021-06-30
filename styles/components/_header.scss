@@ -1,5 +1,26 @@
 #header {
   background: $header-color;
+  height: 14.6875em;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.title {
+  padding-top: 2.25em;
+
+  h3 {
+    margin: 0.25em 0 1.5em 0;
+  }
+}
+
+.theme {
+  border-top: 1px solid $title-gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h3 {
+    margin-top: 1em;
+  }
 }
 
 // .bg-color {
