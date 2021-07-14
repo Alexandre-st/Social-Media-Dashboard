@@ -1,9 +1,13 @@
 #overview {
-  margin-top: 26px;
+  padding: 26px 0 45px 0;
 
   h2 {
     margin-bottom: 27px;
   }
+}
+
+.overview {
+  background: $white-txt;
 }
 
 .overview-case {
@@ -46,6 +50,26 @@
     img {
       width: 8px;
       height: 4px;
+    }
+  }
+}
+
+.overview-dark {
+  background: $blue-bg;
+
+  h2 {
+    color: $blue-color;
+  }
+
+  .overview-case {
+    background-color: $case-blue;
+
+    h3 {
+      color: $blue-color;
+    }
+
+    .number {
+      color: $white-txt;
     }
   }
 }

@@ -1,7 +1,8 @@
-#header {
+.header {
   background: $header-color;
   height: 14.6875em;
   border-radius: 0px 0px 20px 20px;
+  position: relative;
 }
 
 .title {
@@ -23,10 +24,15 @@
   }
 }
 
-// .bg-color {
-//   background: $header-color;
-// }
+// Switch Theme
+.dark {
+  background: $header-bg;
 
-// .dark {
-//   background: $dark-blue;
-// }
+  h1 {
+    color: $header-color;
+  }
+
+  h3 {
+    color: $blue-color;
+  }
+}

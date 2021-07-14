@@ -1,19 +1,19 @@
 let body = document.querySelector('.theme-toggle');
-let header = document.getElementById('header');
 let toggle = document.getElementById("checkbox");
+let header = document.getElementById('header');
+let social = document.getElementById('social');
+let overview = document.getElementById('overview');
 //TODO Il va falloir définir pour chaque composant son coté dark. 
 
 toggle.addEventListener('click', evt => {
   if (toggle.checked) {
-    body.classList.add('dark');
     header.classList.add('dark');
+    social.classList.add('social-dark');
+    overview.classList.add('overview-dark');
   }
   else {
-    body.classList.remove('dark');
     header.classList.remove('dark');
+    social.classList.remove('social-dark');
+    overview.classList.remove('overview-dark');
   }
 });
-
-// document.getElementsByClassName('theme-toggle')[0].addEventListener('change', function(evt) {
-//   (evt.target.checked) ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
-// });
