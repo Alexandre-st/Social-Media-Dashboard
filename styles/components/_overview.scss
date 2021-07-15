@@ -1,12 +1,12 @@
 #overview {
   padding: 26px 0 45px 0;
 
-  @include mq(desktop-large) {
-    height: 60vh;
-  }
+  // @include mq(desktop-large) {
+  //   height: 62vh;
+  // }
 
   @media screen and (min-width: 1160px) {
-    height: 58vh;
+    height: 62vh;
   }
 
   h2 {
