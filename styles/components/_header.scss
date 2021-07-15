@@ -1,38 +1,57 @@
 .header {
   background: $header-color;
-  height: 14.6875em;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0 0 20px 20px;
+  height: 15.25rem;
   position: relative;
 }
 
-.title {
+.header-container {
+  display: flex;
+  justify-content: space-between;
   padding-top: 2.25em;
 
+  @include mq(tablet) {
+    display: block;
+  }
+}
+
+.title {
   h3 {
     margin: 0.25em 0 1.5em 0;
   }
 }
 
 .theme {
-  border-top: 1px solid $title-gray;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 13px;
 
-  h3 {
-    margin-top: 1em;
+  @include mq(tablet) {
+    border-top: 1px solid $border;
+
+    h3 {
+      margin-top: 1em;
+    }
+
+    .theme-toggle {
+      margin-top: 1em;
+    }
   }
 }
 
 // Switch Theme
 .dark {
   background: $header-bg;
+  transition: 0.4s;
 
   h1 {
     color: $header-color;
+    transition: 0.4s;
   }
 
   h3 {
     color: $blue-color;
+    transition: 0.4s;
   }
 }

@@ -1,23 +1,51 @@
 #overview {
   padding: 26px 0 45px 0;
 
+  @include mq(desktop-large) {
+    height: 60vh;
+  }
+
+  @media screen and (min-width: 1160px) {
+    height: 58vh;
+  }
+
   h2 {
-    margin-bottom: 27px;
+    margin-bottom: 1.6875rem;
   }
 }
 
 .overview {
   background: $white-txt;
+
+  &-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.875rem;
+
+    @media screen and (max-width: 1200px) {
+      justify-content: center;
+    }
+  }
 }
 
 .overview-case {
   background-color: $case-gray;
   display: flex;
   justify-content: space-between;
-  min-width: 326px;
-  min-height: 125px;
+  width: 15.9375em;
+  height: 7.8125em;
   margin-bottom: 1rem;
   border-radius: 5px;
+
+  &:hover {
+    background-color: $hover-gray;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  @media screen and (max-width: 589px) {
+    width: 100%;
+  }
 
   &-left {
     padding: 27px 0 19px 24px;
@@ -36,7 +64,6 @@
       width: 20px;
       height: 20px;
       margin-left: auto;
-      // margin-bottom: 40px;
     }
   }
 
@@ -56,20 +83,30 @@
 
 .overview-dark {
   background: $blue-bg;
+  transition: 0.4s;
 
   h2 {
     color: $blue-color;
+    transition: 0.4s;
   }
 
   .overview-case {
     background-color: $case-blue;
+    transition: 0.4s;
+
+    &:hover {
+      background: $hover-blue;
+      transition: 0.4s;
+    }
 
     h3 {
       color: $blue-color;
+      transition: 0.4s;
     }
 
     .number {
       color: $white-txt;
+      transition: 0.4s;
     }
   }
 }

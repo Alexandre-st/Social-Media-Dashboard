@@ -3,22 +3,38 @@
 }
 
 .social-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   position: relative;
-  margin-top: -40px;
+  margin-top: -106px;
+  display: flex;
+  column-gap: 1.875rem;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 1200px) {
+    justify-content: center;
+  }
+
+  @include mq(tablet) {
+    margin-top: -40px;
+  }
 }
 
 .social-case {
-  min-width: 20.375em;
-  width: 100%;
+  width: 15.9375em;
   height: 13.5em;
   background-color: $case-gray;
+  text-align: center;
   margin-bottom: 1.5em;
   border-radius: 5px;
+
+  @media screen and (max-width: 589px) {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: $hover-gray;
+    transition: 0.4s;
+    cursor: pointer;
+  }
 
   span {
     display: block;
@@ -79,17 +95,26 @@
 
 .social-dark {
   background: $blue-bg;
+  transition: 0.4s;
 
   .social-case {
     background-color: $case-blue;
+    transition: 0.4s;
+
+    &:hover {
+      background: $hover-blue;
+      transition: 0.4s;
+    }
 
     h4 {
       color: $white-txt;
+      transition: 0.4s;
     }
 
     h5,
     .follow {
       color: $blue-color;
+      transition: 0.4s;
     }
   }
 }

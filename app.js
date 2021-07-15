@@ -3,7 +3,6 @@ let toggle = document.getElementById("checkbox");
 let header = document.getElementById('header');
 let social = document.getElementById('social');
 let overview = document.getElementById('overview');
-//TODO Il va falloir définir pour chaque composant son coté dark. 
 
 toggle.addEventListener('click', evt => {
   if (toggle.checked) {
